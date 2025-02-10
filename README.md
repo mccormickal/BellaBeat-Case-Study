@@ -10,6 +10,7 @@ Case Study for the BellaBeat Wellness Company as a part of the Google Data Analy
 6. Data Analysis Process
 7. Deliverables
 8. Key Findings and Recommendations
+9. Folder Structure
    
 
 
