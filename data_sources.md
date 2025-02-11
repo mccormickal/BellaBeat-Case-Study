@@ -10,7 +10,7 @@
   * **Source:** Kaggle (Add link)
   * **Type of Data:** Structured, time-series data
   * **Data Collection Method:** Collected from FitBit users via smart fitness trackers
-  * **Time Period Covered:** 2016 (Get months)
+  * **Time Period Covered:** March - May 2016
   * **Data Accessibility:** Publicly available through Kaggle under open data-sharing agreements
   * **Primary Use in This Case Study:** To analyze customer usage patterns of non-Bellabeat smart devices and extract insights relevant to Bellabeat's marketing strategy.
 
@@ -28,3 +28,8 @@ The dataset includes multiple CSV files with information on user activitty, slee
 #### d) Hourly & Minute-Level Activity Data
 * **Description:** More granular logs of movement, calories burned, amd activity intensity.
 * **Relevance:** Useful for understanding real-time engagement and usage patterns.
+
+## 4. Ethical & Legal Considerations
+* **Privacy Compliance:** The dataset is publicly available and does not contain any personally identifiable information (PII).
+* **Limitations:** The dataset represents a sample of 30 FitBit users and may not be fully representative of Bellabeat's target audience.
+* **Biases:** The data is self-selected, meaning it represents users who actively track their fitness, which may not reflect the behaviors of the general population. Additionally, the daa is self-reported via smart devices, without controls for external factors such as weather, overall health, or lifestyle differences that may influence activity levels. The dataset also does not account for periods when users are not wearing their smart devices, potentially leading to gaps in recorded activity.
