@@ -6,10 +6,9 @@ The objective is to ensure the data is clean, consistent, and ready for analysis
 
 ## 2. Data Loading
 ### 2.1 Source
-* Data is obtained from CSV files
-* **File name/Path**
-
-### 2.2 Code to Load Data
+* **Dataset Name:** FitBit Fitness Tracker Dataset
+* **Source:** Kaggle [add link]
+* **Format:** Excel
 
 ## 3. Excel Preprocessing Steps
 The following transformations were performed in Excel before saving the cleaned dataset:
@@ -42,9 +41,13 @@ The following transformations were performed in Excel before saving the cleaned 
 * Renamed **heartrate_seconds** to **heartrateSeconds** for consistency with other tables.
 * Trimmed white space for all columns across all tables (TRIM function)
 
-## 4. Saving Processed Data
+## 4. Data Quality Checks
+* Ensured consistency in recorded values by checking for logical discrepencies (e.g., activity data aligning with expected patterns, total minutes summing appropriately, and tracker usage variations being reasonable).
+* Verified that missing values and zero values were explained by user behavior (e.g., device not being worn, inactivity, recording gaps) which is therefore useful for our analysis.
+* Reviewed extreme values and confirmed they were possible based on human activity trends.
+* Ensured that derived distance, step, and calorie values followed expected relationships and were internally consistent.
 
-## 5. Final Data Validation
-
-## 6. Summary
+## 5. Summary & Next Steps
+* Data cleaning and pre-processing are complete.
+* Next steps in exploratory Data Analysis (EDA) and Model Building.
 
