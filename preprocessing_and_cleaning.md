@@ -17,20 +17,30 @@ The following transformations were performed in Excel before saving the cleaned 
 * Used **Data &rarr; Remove Duplicates** feature in Excel
 * Duplicate rows were identified and removed based on the ID column
 * In Google Sheets: Data &rarr; Data Cleanup &rarr; Remove Duplicates
+  * **sleepDay:** 3 duplicate entries were removed
 
-### 3.2 Standardizing Floats
-* Used Excel's automatic decimal moving button
-   * This level of precision os sufficient for fitness data and our intended purposes, where exact precision is not required
- 
-### 3.3 Standardizing Text
- 
-### 3.4 Date Formats
+### 3.2 Handling Missing Values
+* **weightLogInfo:** The 'Fat' column had only 2 values, so it was removed as it was not necessary for analysis.
+* **sleepDay:** 3 rows with no 'Id' or 'SleepDay' were removed as they were not necessary for analysis.
 
-### 3.5 Data Type Consistency
- 
-### 3.6 Handling Missing Values
+### 3.3 Handling Outliers
+* **weightLogInfo:** BMI outlier was examine and found to make sense with the recorded weight.
+* **dailySteps:** The highest step count was 36,000 (next highest 29,000). While high, it was determined to be possible and was retained for analysis.
+* No other tables contained any significant outliers.
 
-### 3.7 Handling Outliers
+### 3.4 Data Type Conversion
+* Converted columns to the appropriate data type
+  * Columns with dates converted to **Date**.
+  * Columns with dates and timestamps converted to **DateTime**.
+  * Columns with decimal numbers converted to **Float**.
+  * Columns with non-decimal numbers converted to **Integer**.
+
+### 3.5 Normalization & Scaling
+* Reduced all floats to 2 decimal places as full precision was not needed for fitness data.
+ 
+### 3.6 Feature Engineering
+* Renamed **heartrate_seconds** to **heartrateSeconds** for consistency with other tables.
+* Trimmed white space for all columns across all tables (TRIM function)
 
 ## 4. Saving Processed Data
 
