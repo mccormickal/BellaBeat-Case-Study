@@ -40,3 +40,7 @@ Analyze the usage data of non-Bellabeat smart devices to uncover trends on consu
    * The executive team at Bellabeat is made up of high-level leaders who oversee the company's direction, growth, and key decision-making. They rely on insights from the marketing analytics team to make informed decisions that align with Bellabeat's goals and business objectives.
 5. **Bellabeat Customers**
    * Bellabeat's customers are at the heart of the company's mission. These are individuals, primarily women, who use Bellabeat products such as the Leaf, Time, and Spring, to track their health and wellness. Understanding how they engage with these devices will provide valuabale insights for refining their product offerings and marketing strategies.
+
+
+## Folder Structure
+* 'queries/' &arr; Standalone SQL queries for insights.
