@@ -92,12 +92,33 @@ This helps analyze which activity segment contributes the most to the overall ac
 ## 6. Peak Activity Hours ('queries/.sql')
 **Purpose:**
 Identifies the peak hours during the day when users are most active, based on the average number of steps taken during each hour.
+
 **Tables Used:**
 1. `hourlySteps` - Contains the step count data for each hour of the day.
+   
 **Key Metrics:**
 * `Hour` - The hour of the day (24-hour format).
 * `AvgSteps` - The average number of steps taken during that hour.
+  
 **Query Breakdown:**
 * Extracts the hour from the `ActivityHour` field.
 * Calculates and rounds the average number of steps taken each hour.
 * Groups the data by hour to calculate average steps for each hour.
+
+
+## 7. Peak Activity Days of Week ('queries/.sql')
+**Purpose:**
+Identifies which days of the week users are most active based on their average daily step count.
+It helps understand user behavior and identify peak activity days.
+
+**Tables Used:**
+1. `dailySteps` - Contains users' total steps per day.
+   
+**Key Metrics:**
+* `DayOfWeek` - The day of the week when the activity occurred.
+* `AvgSteps` - The average number of steps taken during that hour.
+  
+**Query Breakdown:**
+* Extracts the full week day name from `ActivityDate`.
+* Calculates and rounds the average number of steps taken on each day.
+* Groups the data by day of week to calculate average steps for each day.
