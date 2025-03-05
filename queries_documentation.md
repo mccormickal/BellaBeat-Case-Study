@@ -122,3 +122,21 @@ It helps understand user behavior and identify peak activity days.
 * Extracts the full week day name from `ActivityDate`.
 * Calculates and rounds the average number of steps taken on each day.
 * Groups the data by day of week to calculate average steps for each day.
+
+
+## 8. Group Users Based on Daily Smart Device Usage ('queries/.sql')
+**Purpose:**
+Groups users based on how many minutes per day they wear their smart device, helping to identify how many users fall into different usage categories.
+This helps understand user engagement with the smart device and inform marketing efforts aimed at increasing device usage.
+
+**Tables Used:**
+1. `dailyActivity` - Contains daily activity records for each user.
+   
+**Key Metrics:**
+* `MinuteRange` - The range of minutes (in increments of 60 minutes) that users wear the smart device.
+* `NumUsers` - The count of users within each range of smart device usage.
+  
+**Query Breakdown:**
+* Counts the number of users in each minute range.
+* Divides total minutes by 60, floors the result to the nearest lower integer, and multiplies by 60 to create minute ranges (e.g., 0-60, 61-120).
+* Groups users based on their smart device usage in the specified minute ranges.
