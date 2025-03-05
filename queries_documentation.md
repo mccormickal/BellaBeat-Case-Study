@@ -2,12 +2,21 @@
 
 ## 1. Active Users by Week ('queries/weekly_active_users.sql')
 **Purpose:**
-Idenitifies the number of active users each week based on recorded activity
+Tracks user activity on a weekly basis, counting the number of distinct active users per week.
+It helps understand user engagement and activity trends over time.
+
+**Tables Used:**
+1. `dailyActivity` - Contains daily activity records for each user.
+   
+**Key Metrics:**
+* `AcitvityWeek` - The week in which the activity occurrred (formatted as Year-Month-Week).
+* `ActiveUsers` - The number of distinct users who were active in each week.
+  
 **Query Breakdown:**
-* Extracts the 'ActivityDate' and formats it into weeks.
-* Counts the unique users who logged activity for that week.
-**Usage in R:**
-  This will be visualized as a line chart to show trends in user engagement.
+* Extracts the 'ActivityDate' field and formats it into weeks.
+* Counts the udistinct number of users who logged activity for that week.
+* Groups the data by week to aggregate activity at the weekly level.
+
 
 ## 2. Sleep vs. Steps ('queries/sleep_vs_steps.sql')
 **Purpose:**
