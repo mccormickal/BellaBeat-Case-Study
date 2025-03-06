@@ -84,3 +84,18 @@ This view can be used to:
 4. **Product Development**: Enhance smart device functionalities to better serve users across different activity levels, improving retention and satisfaction.
 
 --
+
+## 7. View: *`weekdayStepsView.csv`*
+**Purpose:** 
+This view analyzes average daily step counts across different days of the week.
+It helps identify patterns in user activity based on the day, providing insights into when users are the most and least active. 
+These trends can inform engagement strategies, product enhancements, and marketing initiatives.
+
+**Usage:**
+This view can be used to:
+1. **Activity Trend Analysis**: Understand which days users are most active, allowing for optimized scheduling of fitness challenges, reminders, or content release.
+2. **Behavioral Insights**: Help users recognize their own step trends, encouraging them to stay active throughout the week.
+3. **Marketing Optimization**: Tailor promotional campaigns based on user activity trends, such as offering step-based incentives on lower-activity days.
+4. **Product Development**: Improve smart device features by integrating weekly step trends into personalized insights, coaching programs, or goal-setting recommendations.
+
+--
