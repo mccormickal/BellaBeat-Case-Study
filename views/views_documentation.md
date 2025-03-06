@@ -55,3 +55,18 @@ This view can be used to:
 4. **Marketing Stragegy**: Target users with relevant content based on their sleep and activity behavior.
 
 --
+
+## 5. View: *`totalMinutesView.csv`*
+**Purpose:** 
+This view groups together users based their daily smart device usage, measured in minutes, from the `dailyActivity` table.
+It groups users into ranges of 60 minutes based on the total number of recorded minutes their device shows each day.
+This helps analyze user engagement, identify trends in device usage, and optimize product features on marketing strategies to improve retention and user experience.
+
+**Usage:**
+This view can be used to:
+1. **User Engagement Analysis**: Understand how odten users wear their smart devices, identifying highly engaged users versus those who need re-engagement.
+2. **Product Optimization**: Improve device features, such as battery life, comfort, and wearability, based on user wear-time trends.
+3. **Marketing Strategy**: Target users with personlized content, promotions, or engagement campaigns based on their device usage patterns.
+4. **Feature Enhancement**: Develop adaptive notifications, reminders, or insights based on how frequently users wear their devices.
+
+--
