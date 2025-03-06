@@ -74,7 +74,8 @@ It helps understand user behavior and identify peak activity days.
 * Extracts the full week day name from `ActivityDate`.
 * Calculates and rounds the average number of steps taken on each day.
 * Groups the data by day of week to calculate average steps for each day.
-
+<br/>
+<br/>
 
 ## 5. Active Users by Week - *`'num_weekly_users.sql'`*
 **Purpose:**
@@ -112,7 +113,8 @@ This helps understand user engagement with the smart device and inform marketing
 * Counts the number of users in each minute range.
 * Divides total minutes by 60, floors the result to the nearest lower integer, and multiplies by 60 to create minute ranges (e.g., 0-60, 61-120).
 * Groups users based on their smart device usage in the specified minute ranges.
-
+<br/>
+<br/>
 
 ## 7. Sleep vs. Steps - *`'sleep_vs_steps.sql'`*
 **Purpose:**
