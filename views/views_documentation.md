@@ -1,6 +1,6 @@
 # FitBit Fitness Dataset - Documented Views
 
-## 1. View: *`ActiveInactiveSteps`* - activeUserView
+## 1. View: *`activeUserView.csv`*
 **Purpose:** 
 This view categorizes users as 'Highly Active', 'Moderately Active', or 'Inactive' based on their avergae daily step count.
 The view aggregates data from the `dailySteps` table to calculate average step total per user and classifies them accordingly. 
@@ -12,8 +12,9 @@ This view can be used to:
 2. **Trend Analysis**: Analyze the distribution of users across activity levels and how it changes over time.
 3. **Engagement Strategies**: Identify groups that need engagement strategies, like encouraging inactive users to become more active.
 
+--
 
-## 2. View: *`hourlyStepAverages`* - peakActivityHourView
+## 2. View: *`hourlyStepsView`*
 **Purpose:** 
 This view identifies the peak hours of activity based on the average step count per hour.
 It aggregates the data from the `hourlySteps` table and calculates the average steps for each hour of the day. 
@@ -24,3 +25,18 @@ This view can be used to:
 1. **Peak Hour Analysis**: Identify the hours during which users are most active, aiding in scheduling notifications, product suggestions, or fitness challenges.
 2. **Marketing Optimization**: Optimize marketing campaigns by targeting users during their peak activity times.
 3. **Product Usage Trends**: Understand when users are most likely to use  the device or engage with fitness-related features, helping improve product design or features.
+
+--
+
+## 3. View: *`segmentedMinutesView`*
+**Purpose:** 
+This view groups together users based on their average intensity level: Low Activity, Moderately Active, or Highly Active.
+It aggregates data from the `userActivityLevelsView` table and calculates the total duration each group of users spends being active.
+This view helps understand user behavior, engagement levels, and trends in physical activity.
+
+**Usage:**
+This view can be used to:
+1. **User Engagement Analysis**: Identify how much time different activity level groups spend being active, aiding in personalized recommendations and user engagement strategies.
+2. **Product Feature Enhancement**: Understand how users interact with their fitness devices and optimize product features to encourage higher activity levels.
+
+--
