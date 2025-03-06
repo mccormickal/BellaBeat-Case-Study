@@ -14,6 +14,21 @@ This view can be used to:
 <br/>
 <br/>
 
+
+## 4. View: *`'activitySegmentView.csv'`*
+**Purpose:** 
+This view groups together users based on their average intensity level: Low Activity, Moderately Active, or Highly Active.
+It aggregates data from the `userActivityLevelsView` table and calculates the average minutes each group of users spends being active.
+This view helps understand user behavior, engagement levels, and trends in physical activity.
+
+**Usage:**
+This view can be used to:
+1. **User Engagement Analysis**: Identify how much time different activity level groups spend being active, aiding in personalized recommendations and user engagement strategies.
+2. **Feature Enhancements**: Understand how users interact with their fitness devices and optimize product features to encourage higher activity levels.
+<br/>
+<br/>
+
+
 ## 2. View: *`'deviceUsageView.csv'`*
 **Purpose:** 
 This view groups together users based their daily smart device usage, measured in minutes, from the `dailyActivity` table.
@@ -43,18 +58,7 @@ This view can be used to:
 <br/>
 <br/>
 
-## 4. View: *`'segmentedMinutesView.csv'`*
-**Purpose:** 
-This view groups together users based on their average intensity level: Low Activity, Moderately Active, or Highly Active.
-It aggregates data from the `userActivityLevelsView` table and calculates the total duration each group of users spends being active.
-This view helps understand user behavior, engagement levels, and trends in physical activity.
 
-**Usage:**
-This view can be used to:
-1. **User Engagement Analysis**: Identify how much time different activity level groups spend being active, aiding in personalized recommendations and user engagement strategies.
-2. **Feature Enhancements**: Understand how users interact with their fitness devices and optimize product features to encourage higher activity levels.
-<br/>
-<br/>
 
 ## 5. View: *`'sleepStepsCorrView.csv'`*
 **Purpose:** 
