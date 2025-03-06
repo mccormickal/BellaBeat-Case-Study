@@ -1,6 +1,6 @@
 # FitBit Data Analysis - Query Documentation
 
-## 1. Active vs. Inactive Users - *`active_users.sql`*
+## 1. Active vs. Inactive Users - *`'active_users.sql'`*
 **Purpose:**
 Categorizes users into different activity levels based on daily step counts.
 This helps with understanding user engagement with fitness tracking and identifying inactive users who may need more motivation.
@@ -20,7 +20,7 @@ This helps with understanding user engagement with fitness tracking and identify
 <br/>
 
 
-## 2. Peak Activity Hours - *`avg_hourly_steps.sql`*
+## 2. Peak Activity Hours - *`'avg_hourly_steps.sql'`*
 **Purpose:**
 Identifies the peak hours during the day when users are most active, based on the average number of steps taken during each hour.
 
@@ -39,7 +39,7 @@ Identifies the peak hours during the day when users are most active, based on th
 <br/>
 
 
-## 3. Group Users by Activity Level - *`avg_segment_minutes.sql`*
+## 3. Group Users by Activity Level - *`'avg_segment_minutes.sql'`*
 **Purpose:**
 Groups users based on thier activity levels and calculates the total active minutes per segment. 
 This helps analyze which activity segment contributes the most to the overall active time.
@@ -48,7 +48,7 @@ This helps analyze which activity segment contributes the most to the overall ac
 1. `segmentedActivityLevels` - Contains user activity data categorized into segments.
    
 **Key Metrics:**
-1. `ActivitySegment` - Predefined categories of activity levels
+1. `ActivitySegment` - Predefined categories of activity levels.
 2. `SUM(AvgActiveMinutes)` - Total active minutes summed for each activity segment.
   
 **Query Breakdown:**
@@ -58,7 +58,7 @@ This helps analyze which activity segment contributes the most to the overall ac
 <br/>
 
 
-## 4. Peak Activity Days of Week - *`avg_weekday_steps.sql`*
+## 4. Peak Activity Days of Week - *`'avg_weekday_steps.sql'`*
 **Purpose:**
 Identifies which days of the week users are most active based on their average daily step count.
 It helps understand user behavior and identify peak activity days.
@@ -76,7 +76,7 @@ It helps understand user behavior and identify peak activity days.
 * Groups the data by day of week to calculate average steps for each day.
 
 
-## 5. Active Users by Week - *`num_weekly_users.sql`*
+## 5. Active Users by Week - *`'num_weekly_users.sql'`*
 **Purpose:**
 Tracks user activity on a weekly basis, counting the number of distinct active users per week.
 It helps understand user engagement and activity trends over time.
@@ -96,13 +96,31 @@ It helps understand user engagement and activity trends over time.
 <br/>
 
 
-## 6. Sleep vs. Steps - *`sleep_vs_steps.sql`*
+## 6. Group Users Based on Daily Smart Device Usage - *`'device_usage_minutes.sql'`*
+**Purpose:**
+Groups users based on how many minutes per day they wear their smart device, helping to identify how many users fall into different usage categories.
+This helps understand user engagement with the smart device and inform marketing efforts aimed at increasing device usage.
+
+**Tables Used:**
+1. `dailyActivity` - Contains daily activity records for each user.
+   
+**Key Metrics:**
+1. `MinuteRange` - The range of minutes (in increments of 60 minutes) that users wear the smart device.
+2. `NumUsers` - The count of users within each range of smart device usage.
+  
+**Query Breakdown:**
+* Counts the number of users in each minute range.
+* Divides total minutes by 60, floors the result to the nearest lower integer, and multiplies by 60 to create minute ranges (e.g., 0-60, 61-120).
+* Groups users based on their smart device usage in the specified minute ranges.
+
+
+## 7. Sleep vs. Steps - *`'sleep_vs_steps.sql'`*
 **Purpose:**
 Analyzes the impact sleep duration has on step count and identifies the potential relationships between sleep and activity levels.
 
 **Tables Used:**
-1. `sleepDay` - Contains user sleep records, including total sleep duration
-2. `dailySteps` - Contains users' total steps per day
+1. `sleepDay` - Contains user sleep records, including total sleep duration.
+2. `dailySteps` - Contains users' total steps per day.
    
 **Key Metrics:**
 1. `AvgDailySteps` - The average number of steps taken per day per user.
@@ -116,7 +134,7 @@ Analyzes the impact sleep duration has on step count and identifies the potentia
 <br/>
 
 
-## 7. User Segmentation Based on Activity Levels - *`user_activity_levels`*
+## 8. User Segmentation Based on Activity Levels - *`'user_activity_levels.sql'`*
 **Purpose:**
 Segments users into different activity levels based on total active minutes in very active, fairly active, and lightly active categories.
 This helps find patterns in intensity levels across all users.
@@ -136,19 +154,4 @@ This helps find patterns in intensity levels across all users.
 <br/>
 
 
-## 8. Group Users Based on Daily Smart Device Usage - *`device_usage_minutes.sql`*
-**Purpose:**
-Groups users based on how many minutes per day they wear their smart device, helping to identify how many users fall into different usage categories.
-This helps understand user engagement with the smart device and inform marketing efforts aimed at increasing device usage.
 
-**Tables Used:**
-1. `dailyActivity` - Contains daily activity records for each user.
-   
-**Key Metrics:**
-1. `MinuteRange` - The range of minutes (in increments of 60 minutes) that users wear the smart device.
-2. `NumUsers` - The count of users within each range of smart device usage.
-  
-**Query Breakdown:**
-* Counts the number of users in each minute range.
-* Divides total minutes by 60, floors the result to the nearest lower integer, and multiplies by 60 to create minute ranges (e.g., 0-60, 61-120).
-* Groups users based on their smart device usage in the specified minute ranges.
