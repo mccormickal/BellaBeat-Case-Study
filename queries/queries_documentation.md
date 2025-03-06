@@ -136,7 +136,27 @@ Analyzes the impact sleep duration has on step count and identifies the potentia
 <br/>
 
 
-## 8. User Segmentation Based on Activity Levels - *`'user_activity_levels.sql'`*
+## 8. Steps vs. Calories - *`'steps_vs_cals.sql'`*
+**Purpose:**
+Analyzes the impact step count has on calories burned and identifies the potential relationships between activity levels and calories.
+
+**Tables Used:**
+1. `dailySteps` - Contains users' total steps per day.
+2. `dailyCalories` - Contains users' total calories burned per day.
+   
+**Key Metrics:**
+1. `AvgDailySteps` - The average number of steps taken per day per user.
+2. `AvgCalories` - The average calories burned per day per user.
+  
+**Query Breakdown:**
+* Joins `dailySteps` and `dailyCalories` on `Id` and `ActivityDate`.
+* Computes average step count and calories burned per user.
+* Calculates correlation between steps and calories.
+<br/>
+<br/>
+
+
+## 9. User Segmentation Based on Activity Levels - *`'user_activity_levels.sql'`*
 **Purpose:**
 Segments users into different activity levels based on total active minutes in very active, fairly active, and lightly active categories.
 This helps find patterns in intensity levels across all users.
