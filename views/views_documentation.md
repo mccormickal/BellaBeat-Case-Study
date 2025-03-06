@@ -99,3 +99,16 @@ This view can be used to:
 4. **Product Development**: Improve smart device features by integrating weekly step trends into personalized insights, coaching programs, or goal-setting recommendations.
 
 --
+
+## 8. View: *`weeklyUsersView.csv`*
+**Purpose:** 
+This view tracks the number of active users over 5 different weeks, providing insights into user engagement trends over time.
+By analyzing fluctuations in active users, the company can assess user retention, engagement effectiveness, and the impact of product features or marketing efforts.
+
+**Usage:**
+This view can be used to:
+1. **User Engagement Monitoring**: Identify trends in active user participation over time, helping track retention and engagement levels.
+2. **Marketing Performance Evaluation**: Assess the impact of campaigns, promotions, or feature updates on user activity.
+4. **Retention Analysis**: Detect periods of declining user activity and implement re-engagement strategies to maintain user interest.
+
+--
