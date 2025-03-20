@@ -15,6 +15,9 @@ This report presents an analysis of user behavior based on fitness tracker data,
 * **Peak Activity Hours:** Users are most active between **5 PM - 7PM**, with step counts peaking during this period.
 * **Activity Level Segmentation:** Users who engage in **high-intensity workouts** also tend to accumulate more total active minutes daily.
 
+<br>  
+<br>  
+<br>  
 
 ## Marketing Strategy
 ### 1. Promote Continuous Device Wear for Better Insights
@@ -46,3 +49,20 @@ This report presents an analysis of user behavior based on fitness tracker data,
   * **Low Activity Users:** Promote beginner-friendly content, such as easy walking challenges and stretches.
   * **Moderately Active Users:** Encourage participation in Bellabeat's **mindfullness and recovery programs** to help users find balance between activity and rest.
   * **Highly Active Users:** Offer premium membership perks focused on active fitness and performance insights.
+
+<br>  
+<br>  
+<br>  
+
+## Next Steps
+1. **Run A/B testing** on push notifications during peak engagement times.
+2. **Develop content strategy** tailored to different user activity levels.
+3. **Monitor engagement trends** after implementing personalized sleep and activity reports.
+4. **Track conversions** from time-based promotions and refine strategies accordingly.
+
+<br>  
+<br>  
+<br>  
+
+## Conclusion
+By leveraging these insights, Bellabeat can create **more personalized and engaging marketing campaigns**, boosting user retention and product use. Implementing these recommendations will help strengthen Bellabeat's position in the women's smart fitness and wellness market, driving growth and increasing brand loyalty.
