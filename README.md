@@ -43,4 +43,5 @@ Analyze the usage data of non-Bellabeat smart devices to uncover trends on consu
 
 
 ## Folder Structure
-* 'queries/' &arr; Standalone SQL queries for insights.
+* 'queries/' &rarr; Standalone SQL queries for insights. Also containts query documentation.
+* 'views/' &rarr; Standalone SQL views. Also contains view documentation.
