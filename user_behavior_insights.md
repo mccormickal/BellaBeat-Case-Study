@@ -28,4 +28,21 @@ This report presents an analysis of user behavior based on fitness tracker data,
 
 ### 3. Address Sleep & Activity Variability with Personalization
 * Introduce **personalized sleep and activity reports** in the Bellabeat app, showing users their unique patterns and offering tailored recommendations.
-* 
+* Develop targeted **email marketing campaigns** emphasizing the importance of sleep in achieving fitness goals.
+* Promote Bellabeat's **mindfullness & sleep programs** in the membership plan to help users optimize rest and recovery in their fitness planning.
+
+### 4. Capitalize on Peask Engagement Times
+* Schedule social media ads and push notifications **between 5 PM - 7 PM** to target users when they are most active.
+* Offer **limited-time discounts** on Bellabeat's fitness trackers during peak engagement hours to boost conversions.
+* Introduce **"Evening Workout Challenges"** via the Bellabeat app to encourage movement during peak activity hours.
+
+### 5. Increase Activity on Low-Step Days
+* Launch **Sunday wellness campaigns** that promote at-home workouts and active recovery and strecthing routines.
+* Offer **"Lazy Sunday" workout reminders** via the Bellabeat app to encourage light activity on Sundays to mainting consistency.
+* Develope blog content around **"How to Stay Active on Rest Days"**, reinforcing Bellabeat's wellness philosophy and promoting balanced movement.
+
+### 6. Personalize Marketing by Activity Level
+* Segment users into **"Low Acivity", "Moderately Active", and Highly Active"** groups and tailor marketing accordingly:
+  * **Low Activity Users:** Promote beginner-friendly content, such as easy walking challenges and stretches.
+  * **Moderately Active Users:** Encourage participation in Bellabeat's **mindfullness and recovery programs** to help users find balance between activity and rest.
+  * **Highly Active Users:** Offer premium membership perks focused on active fitness and performance insights.
